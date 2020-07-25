@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	<test name="Test">
+		<parameter name="url" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php" />
+		<parameter name="uname" value="ria1" />
+		<parameter name="pword" value="Ria12345" />
+		<parameter name="drName" value="Dr.Charlie" />
+		<classes>
+			<class name="org.iit.mmp.tests.ScheduleAppointmentTests" />
+				 
+			 
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
