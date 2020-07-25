@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+
+
 public class RegistrationPage {
 	By fNameTB = By.id("firstname");
 	By lNameTB = By.id("lastname");
