@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 public class ScheduleAppointmentTests extends TestBase {
 	HelperClass helper;
-	
+	//Adding a comment
 	@Parameters({"url","uname","pword","drName"})
 	@Test(description="US_004, Validate Schedule appointment",groups={"sanity","regression","UI","patientmodule","US_004"})
 	public  void validateScheduleAppointment(String url,String uname,String pword,String drName) {

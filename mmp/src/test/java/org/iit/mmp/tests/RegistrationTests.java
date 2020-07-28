@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 //RegistrationTests
+//Adding a line from command line 
 
 public class RegistrationTests  extends TestBase{
 
@@ -29,3 +30,4 @@ public class RegistrationTests  extends TestBase{
 		
 	}
 }
+
