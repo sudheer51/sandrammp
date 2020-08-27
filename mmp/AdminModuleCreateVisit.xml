@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+  <test  name="Test">
+  <parameter name="uRl" value="http://96.84.175.78/MMP-Release2-Admin-Build.2.1.000/login.php" />
+  <parameter name="uName" value="Thomas_444" />
+  <parameter name="pWord" value="Edison_444" />
+  <parameter name="doctorName" value="Dr.Charlie" />
+  <classes>
+  <class name="org.iit.mmp.tests.AdminModuleTest" />
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -80,9 +80,22 @@ public class AppLibrary {
 			String cityArr[]={"madison","dallas","atlanta","miami"};
 			return cityArr;
 	}
-
-
-
+	 
+	public static String getAlphaNumericString(int length) {
+		String SOURCE = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		Random r = new Random();
+		StringBuilder sb = new StringBuilder(length);
+		for (int i = 0; i < length; i++)
+			sb.append(SOURCE.charAt(r.nextInt(SOURCE.length())));
+		return sb.toString();
+	}
+	public static int getRandomIndexInRange(int max, int min) {
+		if (min >= max) {
+			throw new IllegalArgumentException("max must be greater than min");
+		}
+		Random r = new Random();
+		return r.nextInt((max - min) + 1) + min;
+	}
 
 
 

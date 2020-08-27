@@ -1,4 +1,4 @@
-package org.iit.mmp.tests;
+package org.iit.mmp.patientmodule.tests;
 
 import java.util.HashMap;
 
@@ -19,7 +19,7 @@ public class RegistrationTests  extends TestBase{
 	public void validateRegistration(String url) throws InterruptedException
 	{
 		helper = new HelperClass(driver);
-		helper.launchPatientModule(url);
+		helper.launchApplicationURL(url);
 		RegistrationPage regPage = new RegistrationPage(driver);
 		HashMap<String,String> hMap = regPage.fillData();
 		String actual = regPage.readSuccessMsg();

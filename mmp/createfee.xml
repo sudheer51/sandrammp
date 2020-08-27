@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="5">
+	<test name="Test">
+		<parameter name="adminurl" value="http://96.84.175.78/MMP-Release1-Integrated-Build.2.4.000/admin/login.php" />
+		<parameter name="uName" value="Thomas_444" />
+		<parameter name="pwd" value="Edison_444" />
+		<parameter name="patientName" value="Lauren" />
+		<classes>
+			<class
+				name="org.iit.sandrammp.adminModuleTest.CreateFeeTabTest">
+			</class>
+		</classes>
+	</test>
+</suite>

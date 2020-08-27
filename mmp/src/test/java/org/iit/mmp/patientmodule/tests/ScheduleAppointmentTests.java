@@ -1,4 +1,4 @@
-package org.iit.mmp.tests;
+package org.iit.mmp.patientmodule.tests;
 
 import java.util.HashMap;
 
@@ -15,7 +15,7 @@ public class ScheduleAppointmentTests extends TestBase {
 	@Test(description="US_004, Validate Schedule appointment",groups={"sanity","regression","UI","patientmodule","US_004"})
 	public  void validateScheduleAppointment(String url,String uname,String pword,String drName) {
 		helper = new HelperClass(driver);
-		helper.launchPatientModule(url);
+		helper.launchApplicationURL(url);
 		helper.login(uname,pword);
 		helper.navigateToAModule("Schedule Appointment");
 		ScheduleAppointmentPage sPage = new ScheduleAppointmentPage(driver);

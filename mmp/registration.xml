@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	<test name="PatientRegistrationTests">
+		<parameter name="patientLoginUrl"
+			value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php" />
+		<parameter name="tc_Name" value="TC_003" />
+		<parameter name="url"
+			value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000" />
+		<parameter name="uName" value="Thomas_444" />
+		<parameter name="pWord" value="Edison_444" />
+		<groups>
+			<run>
+				<include name="AdminTests" />
+				<include name="PatientRegistration" />
+				<include name="PatientRegistrationTests" />
+			</run>
+		</groups>
+		<dependencies>
+			<group name="PatientRegistration" depends-on="AdminTests" />
+		</dependencies>
+		<classes>
+			<class
+				name="org.iit.mmp.patientmodule.tests.PatientRegistrationTests" />
+			<class
+				name="org.iit.mmp.adminmodule.tests.RegisteredPatientApprovalTests" />
+		</classes>
+	</test> <!-- test -->
+</suite><!-- suite -->
